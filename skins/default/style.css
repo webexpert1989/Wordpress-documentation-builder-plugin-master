@@ -1,0 +1,467 @@
+/*
+ * name: Default Skin
+ * description: This is default skin for documentation builder plugin
+ * author: TRUE wordpress team
+ * created: 2/13/2016
+ */
+/******************************************************************/
+
+/* Global Stylesheet */
+
+#DB-body div, #DB-body span, #DB-body applet, #DB-body object, #DB-body iframe, #DB-body article, #DB-body header, #DB-body footer,
+#DB-body h1, #DB-body h2, #DB-body h3, #DB-body h4, #DB-body h5, #DB-body h6, #DB-body p, #DB-body blockquote, #DB-body pre,
+#DB-body a, #DB-body abbr, #DB-body acronym, #DB-body address, #DB-body big, #DB-body cite, #DB-body code,
+#DB-body del, #DB-body dfn, #DB-body em, #DB-body font, #DB-body ins, #DB-body kbd, #DB-body q, #DB-body s, #DB-body samp,
+#DB-body small, #DB-body strike, #DB-body strong, #DB-body sub, #DB-body sup, #DB-body tt, #DB-body var,
+#DB-body dl, #DB-body dt, #DB-body dd, #DB-body ol, #DB-body ul, #DB-body li,
+#DB-body fieldset, #DB-body form, #DB-body label, #DB-body legend, #DB-body span,
+#DB-body table, #DB-body caption, #DB-body tbody, #DB-body tfoot, #DB-body thead, #DB-body tr, #DB-body th, #DB-body td,
+#DB-body code, #DB-body kbd, #DB-body tt, #DB-body var {
+	color: #333;
+	font-family: "FontAwesome", Lato, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: inherit;
+	font-weight: inherit;
+	border: 0;
+	outline: none;
+	vertical-align: baseline;
+}
+
+#DB-body *, #DB-body *:before, #DB-body *:after { 
+	max-width: 100%;
+	word-break: break-word;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:	border-box;
+	-o-box-sizing:		border-box;
+	-ms-box-sizing:		border-box;
+	box-sizing:			border-box;
+}
+
+#DB-body article, #DB-body aside, #DB-body details, #DB-body figcaption, #DB-body figure,
+#DB-body header, #DB-body footer, #DB-body main, #DB-body nav, #DB-body section {
+	display: block;
+}
+
+#DB-body button, #DB-body input, #DB-body select, #DB-body textarea {
+	font-family: sans-serif;
+}
+
+#DB-body p {
+	margin: 0 0 1em 0;
+}
+
+#DB-body b, #DB-body strong {
+	font-weight: 700;
+}
+
+#DB-body dfn, #DB-body cite, #DB-body em, #DB-body i {
+	font-style: italic;
+}
+
+#DB-body address {
+	margin: 0 0 1em;
+}
+
+#DB-body pre {
+	padding: 1em;
+	margin-bottom: 1em;
+	max-width: 100%;
+	background-color: #eee;
+	overflow: auto;
+}
+
+#DB-body ol, #DB-body ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+#DB-body table { /* tables still need 'cellspacing = "0"' in the markup */
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+
+#DB-body caption, #DB-body th, #DB-body td {
+	text-align: center;
+}
+
+#DB-body blockquote:before, #DB-body blockquote:after,
+#DB-body q:before, #DB-body q:after {
+	content: "";
+}
+#DB-body blockquote, #DB-body q {
+	quotes: "" "";
+}
+
+#DB-body abbr, #DB-body acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+#DB-body mark, #DB-body ins {
+	background-color: #fff;
+	text-decoration: none;
+}
+
+#DB-body i {
+	vertical-align: middle;
+}
+
+#DB-body sup, #DB-body sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+#DB-body sup {
+	bottom: 1em;
+}
+
+#DB-body sub {
+	top: .5em;
+}
+
+#DB-body small {
+	font-size: 75%;
+}
+
+#DB-body big {
+	font-size: 125%;
+}
+
+#DB-body dl {
+	margin: 0 20px;
+}
+
+#DB-body h1, #DB-body h2, #DB-body h3, #DB-body h4, #DB-body h5, #DB-body h6 {
+	clear: both;
+	margin: 0 0 10px 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+	display: block;
+}
+
+#DB-body h1, #DB-body h2 {
+	font-weight: 700;
+	line-height: 35px;
+}
+
+#DB-body h1, #DB-body h1 span {
+	font-size: 30px;
+}
+
+#DB-body h2 {
+	font-size: 26px;
+}
+
+#DB-body h3 {
+	font-size: 24px;
+}
+
+#DB-body h4 {
+	font-size: 18px;
+}
+
+#DB-body h5 {
+	font-size: 17px;
+}
+
+#DB-body h6 {
+	font-size: 16px;
+}
+
+#DB-body img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+/**/
+#DB-body.doc-wrapper { 
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1170px; 
+}
+
+#DB-body .clear-after:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* go to top */
+#DB-body #doc-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+	background-color: #000;
+	display: block;
+	z-index: 99999999;
+	cursor: pointer;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-webkit-opacity: 0.6;
+	-o-opacity: 0.6;
+	-moz-opacity: 0.6;
+	-ms-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+#DB-body #doc-to-top:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-webkit-opacity: 0.8;
+	-o-opacity: 0.8;
+	-moz-opacity: 0.8;
+	-ms-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+#DB-body #doc-to-top:before {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 14px;
+	width: 12px;
+	height: 12px;
+	border-top: solid 4px #fff;
+	border-left: solid 4px #fff;
+	display: block;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#DB-body #doc-to-top:active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+	filter: alpha(opacity=20);
+	-webkit-opacity: 0.2;
+	-o-opacity: 0.2;
+	-moz-opacity: 0.2;
+	-ms-opacity: 0.2;
+	-khtml-opacity: 0.2;
+	opacity: 0.2;
+}
+
+/***
+ * Header section
+ */
+#DB-body .doc-header {
+	margin: 0;
+	padding: 20px 0 0 0;
+	text-align: center;
+}
+
+#DB-body .doc-header .doc-logo {
+	margin: 0 0 20px 0;
+}
+
+#DB-body .doc-header .doc-logo img {
+	max-width: 500px;
+	max-height: 200px;
+}
+
+#DB-body .doc-header .doc-title {
+	padding: 0 10px;
+	font-size: 26px;
+}
+
+#DB-body .doc-header .doc-description {
+	margin: 30px 0;
+	padding: 20px;
+	text-align: left;
+	background: #fafafa;
+	border: solid 1px #eee;
+}
+
+/***
+ * Container
+ */
+#DB-body .doc-content-wrapper {
+	position: relative;
+}
+
+
+/* Menus */
+#DB-body .doc-menus {
+	float: left;
+	padding: 20px;
+	width: 30%;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+}
+#DB-body .doc-menus.fixed-menus {
+	position: absolute;
+	top: 0;
+	overflow-y: auto;
+}
+
+#DB-body .doc-menus ul {
+	margin: 0;
+	padding: 0;
+}
+
+#DB-body .doc-menus li ul {
+	margin-left: 10px;
+}
+
+#DB-body .doc-menus li {
+	position: relative;
+	padding: 0;
+}
+#DB-body .doc-menus li li {
+	padding: 0 0 0 20px;
+}
+
+#DB-body .doc-menus li a {
+	padding: 10px 0;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+}
+#DB-body .doc-menus li a:hover {
+	font-weight: bold;
+}
+#DB-body .doc-menus li a.actived,
+#DB-body .doc-menus li a.actived * {
+	font-weight: bold;
+	color: #03a9f4;
+	text-decoration: none;
+}
+
+#DB-body .doc-menus li a,
+#DB-body .doc-menus li a label {
+	cursor: pointer;
+}
+
+#DB-body .doc-menus li.collapsable:before {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666;
+}
+#DB-body .doc-menus li.collapsable.collapsed:before {
+	content: "";
+}
+#DB-body .doc-menus li.collapsable.extended:before {
+	content: "";
+}
+
+#DB-body .doc-menus #toggle-menus {
+	display: none;
+}
+
+
+/* content */
+#DB-body .doc-content {
+	float: right;
+	width: 70%;
+	padding: 20px 20px 20px 0;
+}
+
+#DB-body .doc-chapters section {
+	padding-bottom: 20px;
+}
+#DB-body .doc-chapters section:last-child {
+	padding-bottom: 0;
+}
+
+#DB-body .doc-chapters article article {
+	padding-left: 20px;
+}
+
+#DB-body .doc-chapter-title {
+	margin: 10px 0 20px 0;
+	font-weight: bold;
+	font-size: 24px;
+	display: table;
+}
+#DB-body .doc-chapter-title span {
+	padding-right: 5px;
+	font-size: 75%;
+	font-weight: bold;
+	color: #666;
+}
+
+#DB-body .doc-chapter-title:after {
+	content: "";
+	margin-top: 10px;
+	width: 100%;
+	height: 3px;
+	background-color: #03a9f4;
+	display: block;
+}
+
+#DB-body .doc-chapters article article .doc-chapter-title {
+	font-size: 20px;
+	color: #444;
+}
+#DB-body .doc-chapters article article .doc-chapter-title:after {
+	height: 0;
+}
+
+#DB-body .doc-chapter-description {
+	margin: 10px;
+	color: #666;
+	font-style: Italic;
+}
+
+
+#DB-body .doc-chapter img {
+	margin: 5px 0;
+	padding: 5px;
+	border: solid 1px #ddd;
+}
+
+#DB-body .doc-chapter-contents {
+	padding: 20px 10px;
+}
+
+#DB-body .mejs-container {
+	border: solid 1px #ddd;
+}
+#DB-body .mejs-container .mejs-controls .mejs-time {
+	height: auto;
+}
+#DB-body .mejs-container .mejs-controls .mejs-time span {
+	color: #fff;
+}
+
+/*** 
+ * mobile responsive
+ */
+@media screen and (max-width: 960px) {
+    #DB-body .doc-menus,
+	#DB-body .doc-content {
+		width: 100%;
+    }
+
+	#DB-body .doc-content {
+		padding-left: 20px;
+		width: 100%;
+	}
+}
